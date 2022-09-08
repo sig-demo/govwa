@@ -23,6 +23,6 @@ jobs:
     # Perform Static Analysis
     - name: Polaris (SAST)
       run: |
-        apt install-y golang-go
+        apt install -y golang-go
         cov-build --dir idir --fs-capture-search . go build
         cov-analyze --dir idir --all --webapp-security --enable-audit-mode
