@@ -25,5 +25,6 @@ jobs:
       run: |
         apt update
         apt install -y golang
+        cov-configure --go
         cov-build --dir idir --fs-capture-search . go build
         cov-analyze --dir idir --all --webapp-security --enable-audit-mode
