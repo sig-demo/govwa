@@ -34,6 +34,7 @@ COPY --from=builder /dist/main /
 COPY ./config/config.json /config/config.json
 COPY ./templates/* /templates/
 COPY ./public/. /public/
+
 EXPOSE 8888
 # Command to run
 CMD ["./main"]
