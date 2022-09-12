@@ -23,5 +23,3 @@ services:
       - MYSQL_PASSWORD=govwaP@ss
       - MYSQL_DATABASE=govwa
       - MYSQL_ROOT_PASSWORD=admin321
-    
-  
